@@ -1,0 +1,35 @@
+.module-feature-card {
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  max-width: 100%;
+  transition: 0.3s;
+  align-items: flex-start;
+  border-color: var(--dl-color-scheme-grey);
+  border-width: 2px;
+  flex-direction: column;
+}
+.module-feature-card:hover {
+  transform: scale(1.02);
+}
+.module-text {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.module-image {
+  width: auto;
+  height: var(--dl-size-size-medium);
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
