@@ -14,12 +14,9 @@
     <meta property="og:title" content="Courses - MJC: Teaching & Consulting" />
     <meta property="og:title" content="Profile - MJC: Teaching & Consulting" />
 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta content="summary_large_image" />
     <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}
+      html {  line-height: 1.15;}
+      body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}
       p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}
       button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}
       button,select {  text-transform: none;}
@@ -60,11 +57,10 @@
       data-tag="font"
     />
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div>
-      <link href="./home.css" rel="stylesheet" />
 
       <div class="home-container">
         <div class="home-navbar navbar-container">
@@ -76,7 +72,7 @@
                 class="logo"
               />
               <h2 id="logo" class="home-text brand-Name logoText">
-                MJC: Teaching &amp; Consulting
+                MJC: Teaching & Consulting
               </h2>
             </div>
             <div class="home-links">
