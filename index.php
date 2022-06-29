@@ -3,7 +3,7 @@
 
 <html>
     <header>
-        <link href="components/header.php"/>
+        <?php include('C:\xampp\XaMPP\htdocs\mjc_ct\components\header.php');?>
     </header>
     <body>
 
