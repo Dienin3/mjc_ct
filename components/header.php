@@ -1,8 +1,9 @@
     <link rel="stylesheet" href="/css/style.css" />
 
 <header class="header">
+    <div class="wrapper">
         <nav class="navbar">
-                <a href="#" class="logo"><img class="logo-image" src="/images/Logo.png">MJC: Teaching & Consulting</a>
+                <a href="#" class="logo"><img class="logo-image" src="images/Logo.png">MJC: Teaching & Consulting</a>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#" class="nav-link">About Me</a>
@@ -26,6 +27,8 @@
                 <span class="bar"></span>
             </div>
         </nav>
+    </div>
 </header>
 
 <script type="text/javascript" src="/js/javascript.js"></script>
+

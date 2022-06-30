@@ -6,7 +6,7 @@
           <div class="footer-logo">
             <img
               alt="image"
-              src="/images/Logo.png"
+              src="images/Logo.png"
               class="logo-image"
             />
             <h2 class="logo">
