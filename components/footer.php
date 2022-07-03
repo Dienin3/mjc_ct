@@ -1,6 +1,7 @@
 <link href="/css/style.css" rel="stylesheet" />
 
     <footer>
+        <div class="wrapper">
       <div class="container">
         <div class="footer-container">
           <div class="footer-logo">
@@ -22,4 +23,5 @@
           </div>
         </div>
       </div>
+    </div>
     </footer>
