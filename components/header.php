@@ -1,4 +1,4 @@
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
 <header class="header">
     <div class="wrapper">
@@ -30,5 +30,5 @@
     </div>
 </header>
 
-<script type="text/javascript" src="/js/javascript.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
 
