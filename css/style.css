@@ -1,4 +1,5 @@
 :root {
+    /* Variables for colors */
   --dl-color-scheme-paleyellow: #fff6a7ff;
   --dl-color-scheme-yellowishwhite: #fffef3ff;
   --dl-color-scheme-red: #961f1aff;
@@ -6,13 +7,6 @@
   --dl-color-scheme-black: #1a1a1aff;
   --dl-color-scheme-green: #7c7d5bff;
   --dl-color-scheme-white: #eaeaeaff;
-  --dl-size-size-xsmall: 16px;
-  --dl-size-size-small: 48px;
-  --dl-size-size-medium: 96px;
-  --dl-size-size-large: 144px;
-  --dl-size-size-xlarge: 192px;
-  --dl-size-size-xxlarge: 288px;
-  --dl-size-size-maxwidth: 1144px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,500;1,400&display=swap');
@@ -40,7 +34,7 @@ a {
 }
 .header{
     background-color: var(--dl-color-scheme-red);
-    border-bottom: 1px solid var(--dl-color-scheme-black);
+    border-bottom: 1px solid var(--dl-color-scheme-white);
     font-family: 'Lato', sans-serif;
 }
 .wrapper {
@@ -105,13 +99,21 @@ a {
 	padding-top: 10rem;
     font-size: 3rem;
     font-family: 'Roboto', sans-serif;
-    font-style: italic;
 	text-align: center;
     line-height: 4.7rem;
 	color: var(--dl-color-scheme-white);
 }
-.subheading {
-    
+.section {
+    background-color: var(--dl-color-scheme-black);
+    width: 100%;
+    height: 60rem;
+}
+.section-text {
+    padding-top: 4rem;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: var(--dl-color-scheme-white);
 }
 
 .learnMoreButton {
