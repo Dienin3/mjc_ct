@@ -17,14 +17,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,500;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    width: 100%;
+    height: 100%;
+}
 html {
     font-size: 62.5%;
-    font-family: 'Lato', sans-serif;
 }
 li {
     list-style: none;
@@ -36,6 +41,7 @@ a {
 .header{
     background-color: var(--dl-color-scheme-red);
     border-bottom: 1px solid var(--dl-color-scheme-black);
+    font-family: 'Lato', sans-serif;
 }
 .wrapper {
     width: 90%;
@@ -88,32 +94,36 @@ a {
 }
 
  .heroImage {
-	background-image: url("images/Hp-1.jpg"), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9));
-	height: 50%;
+     /* Image of Corn */
+	background-image: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/Hp-1.jpg");
+	height: 60rem;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
 }
 .heroContents {
-	padding-top: 25px;
+	padding-top: 10rem;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
 	text-align: center;
-	color: white;
+    line-height: 4.7rem;
+	color: var(--dl-color-scheme-white);
 }
-.bookButton {
-  background-color: blue;
-  border: none;
-  color: white;
-  padding: 10px;
-  font-size: 15px;
-  border-radius: 10px;
-} */
+.subheading {
+    
+}
 
-.section {
-    width: 100%;
-    height: 50%;
-    background-color: var(--dl-color-scheme-black);
+.learnMoreButton {
+  background-color: var(--dl-color-scheme-green);
+  border: none;
+  color: var(--dl-color-scheme-white);
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 1rem;
 }
 footer {
+    font-family: 'Lato', sans-serif;
     width: 100%;
     justify-content: space-between;
     background-color: var(--dl-color-scheme-red);

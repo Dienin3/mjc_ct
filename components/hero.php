@@ -1,8 +1,9 @@
     <link href="css/style.css" rel="stylesheet">
+
 <div class="heroImage">
 	<div class="heroContents">
-		<h1>MJC: Teaching & Consulting</h1>
-		<p>Sustainable blajsdfbhdsfhsdsdffgnrtvrjnirvgjn</p>
-		<a href="#"><button class="bookButton">Learn More</button></a>
+		<h1>Sustainable Breeding: The Future of Ag Business</h1>
+		<p class="subheading">Training the Next Generation of Sustainable Breeders</p>
+		<a href="#"><button class="learnMoreButton">Learn More</button></a>
 	</div>
 </div>
