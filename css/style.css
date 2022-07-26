@@ -103,24 +103,47 @@ a {
     line-height: 4.7rem;
 	color: var(--dl-color-scheme-white);
 }
-.section {
+.home-section {
     background-color: var(--dl-color-scheme-black);
     width: 100%;
-    height: auto;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    align-items: center;
+    height: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    align-content: center;
     overflow: hidden;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.section-text {
+.home-section-text {
     padding-top: 4rem;
     font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
     text-align: left;
     color: var(--dl-color-scheme-white);
-    width: 65%;
+    width: 45%;
+    float: left;
+}
+.home-img {
+    float: right;
+}
+.about-me-section {
+    background-color: var(--dl-color-scheme-black);
+    width: 100%;
+    height: auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    align-content: center;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.about-me-section-text {
+    padding-top: 4rem;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: var(--dl-color-scheme-white);
+    width: 60%;
     float: left;
 }
 .about-me-img {
