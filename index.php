@@ -35,10 +35,9 @@ $conn->close();
                         <?php print $para1 ?>
                 </div>
                 <div>
-                    <img class="home-img-1" src="images/<?php print $img1 ?>">
+                    <img class="home-img" src="images/<?php print $img1 ?>">
                 </div>
-            </div>
-        
+            </div>        
         
     </body>
     

@@ -20,6 +20,9 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">Courses</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Profile</a>
+                </li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
