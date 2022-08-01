@@ -21,7 +21,7 @@
                     <a href="#" class="nav-link">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Profile</a>
+                    <a href="profile.php" class="nav-link">Profile</a>
                 </li>
             </ul>
             <div class="hamburger">

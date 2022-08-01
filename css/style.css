@@ -132,12 +132,20 @@ a {
     width: 45%;
     float: right;
 }
+.home-impact-section {
+    background-color: var(--dl-color-scheme-green);
+    width: 100%;
+    height: 10%;
+    color: var(--dl-color-scheme-white);
+    text-align: center;
+    
+}
 .home-img {
     float: right;
 }
 .home-img-2 {
     float: left;
-    width: 40rem;
+    width: 45%;
 }
 .about-me-section {
     background-color: var(--dl-color-scheme-black);

@@ -9,7 +9,7 @@
     </head>
     <?php
     include('setup.php');
-    $sql = "Select title1, para1, img1 from pages where id=2";
+    $sql = "Select title1, para1, img1 from pages where pagenum=2";
     $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
