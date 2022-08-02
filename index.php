@@ -22,6 +22,11 @@ if ($result->num_rows > 0) {
         $para2 =$row["para2"];
         $img2 = $row["img2"];
         $para3 = $row["para3"];
+        $title4 = $row["title4"];
+        $reviewtext1 = $row["reviewtext1"];
+        $reviewtext2 = $row["reviewtext2"];
+        $reviewtext3 = $row["reviewtext3"];
+        $reviewtext4 = $row["reviewtext4"];
       
   }
 } else {
@@ -54,6 +59,25 @@ $conn->close();
                 <?php print $para3 ?>
             </div>
         </div>
+        <div class="home-section">
+            <div class="home-review-title">
+                <?php print $title4 ?>
+            </div>
+            <div class="home-review-section">
+                <div class="home-review">
+                
+                </div>
+                <div class="review">
+                
+                </div>
+                <div class="review">
+                
+                </div>
+                <div class="review">
+                
+                </div>
+            </div>
+        </div> 
         
     </body>
     
