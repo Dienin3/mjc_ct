@@ -9,7 +9,7 @@
     </head>
 <?php
     include('setup.php');
-    $sql = "Select title1, para1, img1, para2, img2, para3 from pages where pagenum=1";
+    $sql = "Select title1, para1, img1, para2, img2, para3, title4, reviewtext1, reviewtext2, reviewtext3, reviewtext4 from pages where pagenum=1";
     $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -42,8 +42,8 @@ $conn->close();
                     <h1><u><?php print $title1 ?></u></h1>
                         <?php print $para1 ?>
                 </div>
-                <div>
-                    <img class="home-img" src="images/<?php print $img1 ?>">
+                <div class="home-img"> 
+                    <img src="images/<?php print $img1 ?>">
                 </div>
             </div>
         <div class="home-section">
@@ -55,7 +55,7 @@ $conn->close();
                 </div>
             </div> 
         <div class="home-impact-section">
-            <div class="impact-text">
+            <div>
                 <?php print $para3 ?>
             </div>
         </div>

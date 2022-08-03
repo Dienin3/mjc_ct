@@ -1,7 +1,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
 <header class="header">
-    <div class="wrapper">
+    <div class="nav-wrapper">
         <nav class="navbar">
                 <a href="index.php" class="logo"><img class="logo-image" src="images/Logo.png">MJC: Teaching & Consulting</a>
             <ul class="nav-menu">
