@@ -1,8 +1,8 @@
 <link href="css/style.css" rel="stylesheet" />
 
     <footer>
-      <div class="footer-container">
-        <div class="footer-container-2">
+      <div class="container">
+        <div class="footer-container">
           <div class="footer-logo">
             <img
               alt="image"

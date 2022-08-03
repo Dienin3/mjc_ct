@@ -3,14 +3,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
         <script type="text/javascript" src="/js/javascript.js"></script>
         <?php include('components/header.php');?>
     </head>
 <?php
     include('setup.php');
-    $sql = "Select title1, para1, img1, para2, img2, para3, title4, reviewtext1, reviewtext2, reviewtext3, reviewtext4 from pages where pagenum=1";
+    $sql = "Select title1, para1, img1, para2, img2, para3 from pages where pagenum=1";
     $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
