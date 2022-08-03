@@ -86,14 +86,12 @@ a {
 .logo-image {
     width: 4rem;
 }
-
  .heroImage {
      /* Image of Corn */
 	background-image: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/Hp-1.jpg");
 	height: 80rem;
 	background-position: center;
 	background-repeat: no-repeat;
-	position: relative;
 }
 .heroContents {
 	padding-top: 20rem;
@@ -113,15 +111,16 @@ a {
     overflow: hidden;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    justify-content: center;
 }
 .home-section-text {
-    padding-top: 4rem;
-    font-size: 1.8rem;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    color: var(--dl-color-scheme-white);
-    width: 45%;
-    float: left;
+        padding-top: 4rem;
+        font-size: 1.8rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        color: var(--dl-color-scheme-white);
+        width: 50%;
+        float: left;
 }
 .home-section-text-2 {
     padding-top: 4rem;
@@ -129,7 +128,7 @@ a {
     font-family: 'Roboto', sans-serif;
     text-align: left;
     color: var(--dl-color-scheme-white);
-    width: 45%;
+    width: 50%;
     float: right;
 }
 .home-impact-section {
@@ -145,17 +144,20 @@ a {
 }
 .home-review-title {
     padding-top: 2rem;
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: var(--dl-color-scheme-white);
 }
 .home-img {
     float: right;
+    width: 30rem;
+    height: auto;
 }
 .home-img-2 {
     float: left;
-    width: 50rem;
+    width: 30rem;
+    height: auto;
 }
 .about-me-section {
     background-color: var(--dl-color-scheme-black);
@@ -174,11 +176,13 @@ a {
     font-family: 'Roboto', sans-serif;
     text-align: left;
     color: var(--dl-color-scheme-white);
-    width: 60%;
+    width: 40%;
     float: left;
 }
 .about-me-img {
     float: right;
+    width: 47rem;
+    height: auto;
 }
 .learnMoreButton {
   background-color: var(--dl-color-scheme-green);
@@ -197,12 +201,12 @@ footer {
     padding-bottom: .5%;
     clear: both;
 }
-.container {
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.footer-container {
+.footer-container-2 {
     width: auto;
     height: auto;
     padding-left: 2%;
@@ -223,7 +227,7 @@ footer {
     font-size: 1.3rem;
 }
 
-@media only screen and (max-width: 945px) {
+@media only screen and (max-width: 1000px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -234,8 +238,7 @@ footer {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-
-}
+    }   
     .nav-menu.active {
         left: 0;
     }
@@ -257,5 +260,26 @@ footer {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
-
+    .home-section-text {
+        width: 100%;
+    }
+    .home-img {
+        float: none;
+        align-content: center;
+    }
+    .home-img-2 {
+        float: none;
+        align-content: center;
+    }
+    .home-section-text-2 {
+        width: 100%;
+    }
+    .about-me-section-text {
+        width: 100%;
+    }
+    .about-me-img {
+        width: auto;
+        float: none;
+        align-content: center;
+    }
 }
