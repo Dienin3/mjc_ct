@@ -46,11 +46,11 @@ $conn->close();
                     <img class="home-img" src="images/<?php print $img1 ?>">
                 </div>
             </div>
-        <div class="home-section">
+        <div class="home-section row">
                 <div class="col-3">
                     <img class="home-img-2" src="images/<?php print $img2 ?>">
                 </div>
-                <div class="home-section-text-2 col-9">
+                <div class="home-section-text col-9">
                     <?php print $para2 ?>
                 </div>
             </div> 
