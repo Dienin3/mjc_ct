@@ -37,21 +37,21 @@ $conn->close();
     
     <body>
         <?php include('components/hero.php')?>
-        <div class="home-section">
-                <div class="home-section-text">
+        <div class="home-section row">
+                <div class="home-section-text col-9">
                     <h1><u><?php print $title1 ?></u></h1>
                         <?php print $para1 ?>
                 </div>
-                <div class="home-img"> 
-                    <img src="images/<?php print $img1 ?>">
+                <div class="col-3"> 
+                    <img class="home-img" src="images/<?php print $img1 ?>">
                 </div>
             </div>
         <div class="home-section">
-                <div>
+                <div class="col-3">
                     <img class="home-img-2" src="images/<?php print $img2 ?>">
                 </div>
-                <div class="home-section-text-2">
-                        <?php print $para2 ?>
+                <div class="home-section-text-2 col-9">
+                    <?php print $para2 ?>
                 </div>
             </div> 
         <div class="home-impact-section">

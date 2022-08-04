@@ -29,11 +29,11 @@ $conn->close();
     
     <body>
             <div class="about-me-section">
-                <div class="about-me-section-text">
+                <div class="about-me-section-text col-8">
                     <?php print $title1 ?>
                     <?php print $para1 ?>
                 </div>
-                <div>
+                <div class="col-4">
                     <img class="about-me-img" src="images/<?php print $img1 ?>">
                 </div>
             </div>
