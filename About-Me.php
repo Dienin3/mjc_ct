@@ -28,7 +28,7 @@ $conn->close();
     ?>
     
     <body>
-            <div class="about-me-section">
+            <div class="section row">
                 <div class="about-me-section-text col-8">
                     <?php print $title1 ?>
                     <?php print $para1 ?>

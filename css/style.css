@@ -1,12 +1,11 @@
 :root {
     /* Variables for colors */
-  --dl-color-scheme-paleyellow: #fff6a7ff;
-  --dl-color-scheme-yellowishwhite: #fffef3ff;
-  --dl-color-scheme-red: #961f1aff;
-  --dl-color-scheme-grey: #cbcbcbff;
-  --dl-color-scheme-black: #1a1a1aff;
-  --dl-color-scheme-green: #7c7d5bff;
-  --dl-color-scheme-white: #eaeaeaff;
+  --dl-color-paleyellow: #fffef3ff;
+  --dl-color-red: #961f1aff;
+  --dl-color-grey: #cbcbcbff;
+  --dl-color-black: #1a1a1aff;
+  --dl-color-green: #7c7d5bff;
+  --dl-color-white: #eaeaeaff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,500;1,400&display=swap');
@@ -78,8 +77,8 @@ a {
     text-decoration: none;
 }
 .header{
-    background-color: var(--dl-color-scheme-red);
-    border-bottom: 1px solid var(--dl-color-scheme-white);
+    background-color: var(--dl-color-red);
+    border-bottom: 1px solid var(--dl-color-white);
     font-family: 'Lato', sans-serif;
 }
 .nav-wrapper {
@@ -103,7 +102,7 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--dl-color-scheme-white);
+    background-color: var(--dl-color-white);
 }
 .nav-menu {
     display: flex;
@@ -116,17 +115,17 @@ a {
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
-    color: var(--dl-color-scheme-white);
+    color: var(--dl-color-white);
 }
 .nav-link:hover{
-    color: var(--dl-color-scheme-grey);
+    color: var(--dl-color-grey);
 }
 .logo {
     display: flex;
     align-items: center;
     font-size: 2.5rem;
     font-weight: 500;
-    color: var(--dl-color-scheme-white);
+    color: var(--dl-color-white);
 }
 .logo-image {
     width: 4rem;
@@ -145,10 +144,10 @@ a {
     font-family: 'Roboto', sans-serif;
 	text-align: center;
     line-height: 4.8rem;
-	color: var(--dl-color-scheme-white);
+	color: var(--dl-color-white);
 }
-.home-section {
-    background-color: var(--dl-color-scheme-black);
+.section {
+    background-color: var(--dl-color-black);
     width: 100%;
     height: 100%;
     padding-left: 12.5rem;
@@ -162,12 +161,20 @@ a {
     font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
     text-align: left;
-    color: var(--dl-color-scheme-white);
+    color: var(--dl-color-white);
+}
+.home-img {
+
+
+}
+.home-img-2 {
+    width: 40rem;
+    max-width: 100%;
 }
 .home-impact-section {
-    background-color: var(--dl-color-scheme-green);
+    background-color: var(--dl-color-green);
     width: 100%;
-    color: var(--dl-color-scheme-white);
+    color: var(--dl-color-white);
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -180,37 +187,31 @@ a {
     font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: var(--dl-color-scheme-white);
+    color: var(--dl-color-white);
 }
-.home-img {
-
-
-}
-.home-img-2 {
-    height: 20rem;
-
-}
-.about-me-section {
-    background-color: var(--dl-color-scheme-black);
-    width: 100%;
-    height: 100%;
-    padding-left: 12.5rem;
-    padding-right: 12.5rem;
+.review {
+    font-size: 1.7rem;
+    color: var(--dl-color-white);
+    line-height: 2.4rem;
+    text-align: center;
+    padding: 4rem 4rem 4rem 4rem;
     overflow: hidden;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 .about-me-section-text {
     padding-top: 4rem;
     font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
     text-align: left;
-    color: var(--dl-color-scheme-white);
+    color: var(--dl-color-white);
+}
+.about-me-img {
+    min-height: 100%;
+    width: 100%;
 }
 .learnMoreButton {
-  background-color: var(--dl-color-scheme-green);
+  background-color: var(--dl-color-green);
   border: none;
-  color: var(--dl-color-scheme-white);
+  color: var(--dl-color-white);
   padding: 10px;
   font-size: 2rem;
   border-radius: 1rem;
@@ -219,7 +220,7 @@ footer {
     font-family: 'Lato', sans-serif;
     width: 100%;
     justify-content: space-between;
-    background-color: var(--dl-color-scheme-red);
+    background-color: var(--dl-color-red);
     padding-top: .5%;
     padding-bottom: .5%;
     clear: both;
@@ -246,17 +247,21 @@ footer {
     display: flex;
     padding-right: 2%;
     flex-direction: row;
-    color: var(--dl-color-scheme-white);
+    color: var(--dl-color-white);
     font-size: 1.3rem;
 }
-
+@media only screen and (max-width: 1400px) {
+    .review {
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 945px) {
     .nav-menu {
         position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: var(--dl-color-scheme-red);
+        background-color: var(--dl-color-red);
         width: 100%;
         border-radius: 10px;
         text-align: center;
@@ -293,4 +298,6 @@ footer {
     .about-me-section-text {
         width: 100%;
     }
-}
+    .home-img-2 {
+        
+    }
