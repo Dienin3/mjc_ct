@@ -28,12 +28,12 @@ $conn->close();
     ?>
     
     <body>
-            <div class="section row">
-                <div class="about-me-section-text col-8">
+            <div class="section">
+                <div class="col span_2_of_3">
                     <?php print $title1 ?>
                     <?php print $para1 ?>
                 </div>
-                <div class="col-4">
+                <div class="col span_1_of_3">
                     <img class="about-me-img" src="images/<?php print $img1 ?>">
                 </div>
             </div>
