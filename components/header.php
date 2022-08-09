@@ -15,7 +15,7 @@
                     <a href="#" class="nav-link">Consulting</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="Contact.php" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Courses</a>

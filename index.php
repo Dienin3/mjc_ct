@@ -54,7 +54,7 @@ $conn->close();
                     <?php print $para2 ?>
                 </div>
             </div> 
-        <div class="home-impact-section span_3_of_3">
+        <div class="home-impact-section col span_3_of_3">
             <div>
                 <?php print $para3 ?>
             </div>
