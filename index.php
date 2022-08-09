@@ -37,43 +37,43 @@ $conn->close();
     
     <body>
         <?php include('components/hero.php')?>
-        <div class="section">
-                <div class="col span_2_of_3">
+        <div class="section row">
+                <div class="home-section-text col-9">
                     <h1><u><?php print $title1 ?></u></h1>
                         <?php print $para1 ?>
                 </div>
-                <div class="col span_1_of_3"> 
+                <div class="col-3"> 
                     <img class="home-img" src="images/<?php print $img1 ?>">
                 </div>
             </div>
-        <div class="section">
-                <div class="col span_1_of_3">
+        <div class="section row">
+                <div class="col-4">
                     <img class="home-img-2" src="images/<?php print $img2 ?>">
                 </div>
-                <div class="col span_2_of_3">
+                <div class="home-section-text col-8">
                     <?php print $para2 ?>
                 </div>
             </div> 
-        <div class="home-impact-section span_3_of_3">
+        <div class="home-impact-section row">
             <div>
                 <?php print $para3 ?>
             </div>
         </div>
-        <div class="section">
-            <div class="home-review-title span_3_of_3">
+        <div class="section row">
+            <div class="home-review-title">
                 <?php print $title4 ?>
             </div>
             <div>
-                <div class="review col span_1_of_4">
+                <div class="review col-3">
                     <?php print $reviewtext1 ?>
                 </div>
-                <div class="review col span_1_of_4">
+                <div class="review col-3">
                     <?php print $reviewtext2 ?>
                 </div>
-                <div class="review col span_1_of_4">
+                <div class="review col-3">
                     <?php print $reviewtext3 ?>
                 </div>
-                <div class="review col span_1_of_4">
+                <div class="review col-3">
                     <?php print $reviewtext4 ?>
                 </div>
             </div>
