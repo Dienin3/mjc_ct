@@ -17,6 +17,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* honeypot */
+.user-cannot-see {
+    display:none
+}
 
 /*  SECTIONS  */
 .section {
