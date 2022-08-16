@@ -23,6 +23,9 @@
                 <li class="nav-item">
                     <a href="profile.php" class="nav-link">Profile</a>
                 </li>
+                <li>
+				    <a href="login/logout.php"><i class="nav-item fa-sign-out-alt"></i>Logout</a>
+                </li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
