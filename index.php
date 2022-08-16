@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css" />
         <script type="text/javascript" src="/js/javascript.js"></script>
-        <?php include('components/header.php');?>
     </head>
 <?php
     include('setup.php');
@@ -36,6 +35,7 @@ $conn->close();
     ?>
     
     <body>
+        <?php include('components/header.php');?>
         <?php include('components/hero.php')?>
         <div class="section">
                 <div class="col span_2_of_3">

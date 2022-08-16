@@ -4,9 +4,11 @@
 		<meta charset="utf-8">
 		<title>Login</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
         <link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
+        <?php include('../components/header.php');?>
 		<div class="login">
 			<h1>Login</h1>
 			<form action="authenticate.php" method="post">
@@ -22,4 +24,7 @@
 			</form>
 		</div>
 	</body>
+    <footer>
+        <?php include('../components/footer.php');?>
+    </footer>
 </html>
