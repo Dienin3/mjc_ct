@@ -3,7 +3,7 @@
 <header class="header">
     <div class="nav-wrapper">
         <nav class="navbar">
-                <a href="/mjc_ct/index.php" class="logo"><img class="logo-image" src="images/Logo.png">MJC: Teaching & Consulting</a>
+                <a href="/mjc_ct/index.php" class="logo"><img class="logo-image" src="./images/Logo.png">MJC: Teaching & Consulting</a>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="/mjc_ct/About-Me.php" class="nav-link">About Me</a>
