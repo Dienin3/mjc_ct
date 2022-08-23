@@ -23,8 +23,8 @@
                 <li class="nav-item">
                     <a href="/mjc_ct/profile.php" class="nav-link">Profile</a>
                 </li>
-                <li>
-				    <a href="login/logout.php"><i class="nav-item fa-sign-out-alt"></i>Logout</a>
+                <li class="nav-item fa-sign-out-alt">
+				    <a href="login/logout.php" class="nav-link">logout</a>
                 </li>
             </ul>
             <div class="hamburger">
