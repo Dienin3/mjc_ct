@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/form.css" />
         <script type="text/javascript" src="/js/javascript.js"></script>
         <?php include('components/header.php');?>
     </head>
@@ -37,14 +38,14 @@ $conn->close();
 <?php } ?>
 
 <!-- Form fields -->
-<form action="" method="post">
+<form action="" method="post" class="form">
     <div class="form-input">
         <label for="name">Name</label>
         <input type="text" name="name" placeholder="Enter your name" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>" required="">
     </div>
     <div class="form-input">
         <label for="email">Email</label>
-        <input type="email" name="email" placeholder="Enter your email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" required="">
+        <input type="text" name="email" placeholder="Enter your email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" required="">
     </div>
     <div class="form-input">
         <label for="subject">Subject</label>
@@ -54,13 +55,15 @@ $conn->close();
         <label for="message">Message</label>
         <textarea name="message" placeholder="Type your message here" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
     </div>
-    
-    <input type="submit" name="submit" class="btn" value="Submit">
-</form>
-        </div>
-    </body>
-    
+    <div class="form-input">
+        <input type="submit" name="submit" value="Submit">
+    </div>
+  </form>
+ 
+        </div>  
     <footer>
         <?php include('components/footer.php');?>
     </footer>
+    </body>
+
 </html>

@@ -27,8 +27,8 @@
 				<input type="submit" value="Register">
 			</form>
 		</div>
-	</body>
-    <footer>
+        <footer>
         <?php include('../components/footer.php');?>    
-    </footer>
+        </footer>    
+	</body>
 </html>

@@ -36,6 +36,7 @@ $conn->close();
     
     <body>
         <?php include('components/header.php');?>
+
         <?php include('components/hero.php')?>
         <div class="section">
                 <div class="col span_2_of_3">
@@ -45,7 +46,7 @@ $conn->close();
                 <div class="col span_1_of_3"> 
                     <img class="home-img" src="images/<?php print $img1 ?>">
                 </div>
-            </div>
+        </div>
         <div class="section">
                 <div class="col span_1_of_3">
                     <img class="home-img-2" src="images/<?php print $img2 ?>">
@@ -55,10 +56,10 @@ $conn->close();
                 </div>
             </div> 
         <div class="home-impact-section col span_3_of_3">
-            <div>
-                <?php print $para3 ?>
-            </div>
-        </div>
+                <div>
+                    <?php print $para3 ?>
+                </div> 
+            </div>           
         <div class="section">
             <div class="home-review-title span_3_of_3">
                 <?php print $title4 ?>
@@ -78,7 +79,6 @@ $conn->close();
                 </div>
             </div>
         </div> 
-        
     </body>
     
     <footer>

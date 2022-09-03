@@ -20,8 +20,10 @@
 					<i class="fas fa-lock"></i>
 				</label>
 				<input type="password" name="password" placeholder="Password" id="password" required>
+                
+                <p class="logthing">New User? <a href="register_form.php">Register</a></p>
+                
 				<input type="submit" value="Login">
-                <p class="logthing">New user? <a href="register_form.php">register</a></p>
 			</form>
 		</div>
 	</body>

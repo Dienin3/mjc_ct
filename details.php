@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<?php 
+    //print_r($_GET);
+    $courseid = $_GET['courseid'];
+    //print $courseid;
+?>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="/js/javascript.js"></script>
+    </head>
+<?php
+    include('setup.php');
+    $sql = "Select * from courses where id='$courseid'";
+    $result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    
+        $title = $row["title"];
+        $objectives =$row["objectives"];
+        $img = $row["img"];
+        $evaluation =$row["evaluation"];
+        $description =$row["description"];
+      
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
+    ?>
+    
+    <body>
+        <?php include('components/header.php');?>
+        <div class="section">
+                <div class="col span_2_of_3">
+                    <h1><?php print $title ?></h1><br>
+                    <h3>Description:</h3>
+                        <?php print $description ?>
+                </div>
+                <div class="col span_1_of_3"> 
+                    <img class="home-img" src="images/<?php print $img ?>">
+                </div>
+                <div class="col span_2_of_3">
+                    <h3>Objectives:</h3>
+                    <?php print $objectives ?>
+                </div>
+
+                <div class="col span_2_of_3">
+                    <h3>Evaluation:</h3>
+                    <?php print $evaluation ?>
+                </div> 
+        </div>
+
+          
+    <footer>
+        <?php include('components/footer.php');?>
+    </footer>
+    </body>
+    
+
+</html>

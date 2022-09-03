@@ -54,6 +54,11 @@
 /*  GRID OF THREE  */
     .span_3_of_3 { 
         width: 100%; 
+        font-size: 1.8rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: var(--dl-color-white);
+        padding: 1rem;
     }
     .span_2_of_3 { 
         width: 66.26%;
@@ -83,15 +88,21 @@ li {
 a {
     text-decoration: none;
 }
-.header{
+.header {
     background-color: var(--dl-color-red);
     border-bottom: 1px solid var(--dl-color-white);
     font-family: 'Lato', sans-serif;
 }
-.nav-wrapper {
+.heading {
+    font-size: 4rem;
+    padding: 1% 1% 0 1%;
+}
+.wrapper {
     width: 90%;
+    height: auto;
     margin: auto;
     clear: both;
+    overflow: auto;
 }
 .navbar {
     display: flex;
@@ -137,11 +148,17 @@ a {
 .logo-image {
     width: 4rem;
 }
-
  .heroImage {
      /* Image of Corn */
 	background-image: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/Hp-1.jpg");
 	height: 80rem;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+ .heroImage2 {
+     /* Image of Corn */
+	background-image: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/C-1.jpg");
+	height: auto;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -155,8 +172,6 @@ a {
 }
 .contactHero {
     background-image:  linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/Ct-1.jpg");
-}
-.home-img-2 {
     
 }
 .home-impact-section {
@@ -237,6 +252,16 @@ footer {
     color: var(--dl-color-white);
     font-size: 1.3rem;
 }
+.c-options {
+    color: var(--dl-color-white);
+    background-color: var(--dl-color-green);
+    opacity: 0.9;
+    margin: 2% 6% 2% 6%;
+    padding: 2% 5% 2% 3%;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.2rem; 
+}
 /* go full width below 1200px */
 @media only screen and (max-width: 1200px) {
     .span_1_of_4 {
@@ -254,7 +279,9 @@ footer {
 	.span_3_of_3, .span_2_of_3, .span_1_of_3, { 
         width: 100%; 
     }
-
+}
+@media only screen and (max-width: 1000px) {
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -289,3 +316,4 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
