@@ -31,7 +31,7 @@ $conn->close();
    
     <body>
         <div class="section contactHero">
-            <?php print $title1 ?>
+            <h2 class="heading"><center><?php print $title1 ?></center></h2>
             <!-- Status message -->
 <?php if(!empty($statusMsg)){ ?>
     <div class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></div>
@@ -39,23 +39,23 @@ $conn->close();
 
 <!-- Form fields -->
 <form action="" method="post" class="form">
-    <div class="form-input">
-        <label for="name">Name</label>
+    <div class="form-input span_2_of_3">
+        <label for="name">Name:</label>
         <input type="text" name="name" placeholder="Enter your name" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>" required="">
     </div>
-    <div class="form-input">
-        <label for="email">Email</label>
+    <div class="form-input span_2_of_3">
+        <label for="email">Email:</label>
         <input type="text" name="email" placeholder="Enter your email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" required="">
     </div>
-    <div class="form-input">
-        <label for="subject">Subject</label>
+    <div class="form-input span_2_of_3">
+        <label for="subject">Subject:</label>
         <input type="text" name="subject" placeholder="Enter subject" value="<?php echo !empty($postData['subject'])?$postData['subject']:''; ?>" required="">
     </div>
-    <div class="form-input">
-        <label for="message">Message</label>
+    <div class="form-input span_2_of_3">
+        <label for="message">Message:</label>
         <textarea name="message" placeholder="Type your message here" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
     </div>
-    <div class="form-input">
+    <div class="form-input span_2_of_3">
         <input type="submit" name="submit" value="Submit">
     </div>
   </form>

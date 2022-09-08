@@ -21,7 +21,7 @@
 				</label>
 				<input type="password" name="password" placeholder="Password" id="password" required>
                 
-                <p class="logthing">New User? <a href="register_form.php">Register</a></p>
+                <p class="logLink">New User? <a href="register_form.php">Register</a></p>
                 
 				<input type="submit" value="Login">
 			</form>

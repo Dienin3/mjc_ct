@@ -24,6 +24,8 @@
 					<i class="fas fa-envelope"></i>
 				</label>
 				<input type="email" name="email" placeholder="Email" id="email" required>
+                <p class="logLink">Already have an account? <a href="login.php">Login</a></p>
+                
 				<input type="submit" value="Register">
 			</form>
 		</div>
