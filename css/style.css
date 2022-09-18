@@ -67,6 +67,11 @@
         text-align: left;
         color: var(--dl-color-white);
     }
+    .span_2_of_3_v2 { 
+        width: 66.26%;
+        font-size: 1.8rem;
+        font-family: 'Roboto', sans-serif;
+    }
     .span_1_of_3 { 
         width: 32.53%; 
     }
@@ -278,7 +283,7 @@ footer {
     .col {  
         margin: 1% 0 1% 0%; 
     }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3, { 
+	.span_3_of_3, .span_2_of_3, .span_2_of_3_v2, .span_1_of_3, { 
         width: 100%; 
     }
 }

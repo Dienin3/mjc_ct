@@ -13,8 +13,9 @@ if(isset($_POST['submit'])){
     $postData = $_POST; 
     $name = trim($_POST['name']); 
     $email = trim($_POST['email']); 
-    $subject = trim($_POST['subject']); 
+    $subjectm = trim($_POST['subject']); 
     $message = trim($_POST['message']); 
+    
      
     // Validate form fields 
     if(empty($name)){ 
@@ -23,7 +24,7 @@ if(isset($_POST['submit'])){
     if(empty($email) || filter_var($email, FILTER_VALIDATE_EMAIL) === false){ 
         $valErr .= 'Please enter a valid email.<br/>'; 
     } 
-    if(empty($subject)){ 
+    if(empty($subjectm)){ 
         $valErr .= 'Please enter subject.<br/>'; 
     } 
     if(empty($message)){ 
@@ -40,7 +41,18 @@ if(isset($_POST['submit'])){
             <p><b>Subject: </b>".$subject."</p> 
             <p><b>Message: </b>".$message."</p> 
         "; 
-         
+        include('setup.php');
+        $sql = "INSERT INTO message (name, subject, email, message)
+VALUES ('$name', '$subjectm', '$email', '$message')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+
         // Always set content-type when sending HTML email 
         $headers = "MIME-Version: 1.0" . "\r\n"; 
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n"; 

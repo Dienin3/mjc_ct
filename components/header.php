@@ -1,4 +1,3 @@
-    <link rel="stylesheet" href="css/style.css" />
 
 <header class="header">
     <div class="wrapper">
@@ -20,12 +19,18 @@
                 <li class="nav-item">
                     <a href="/mjc_ct/courses.php" class="nav-link">Courses</a>
                 </li>
+              <?php if (!isset($_SESSION['loggedin'])) { ?>
+                 <li class="nav-item">
+				    <a href="/mjc_ct/login/login.php" class="nav-link">Login</a>
+                </li>
+   <?php     } else { ?>
                 <li class="nav-item">
                     <a href="/mjc_ct/profile.php" class="nav-link">Profile</a>
                 </li>
                 <li class="nav-item fa-sign-out-alt">
 				    <a href="/mjc_ct/login/logout.php" class="nav-link">logout</a>
                 </li>
+       <?php  } ?>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>

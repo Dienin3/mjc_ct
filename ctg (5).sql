@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 09, 2022 at 12:12 AM
+-- Generation Time: Sep 16, 2022 at 06:25 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -81,18 +81,55 @@ CREATE TABLE `courses` (
   `objectives` text DEFAULT NULL,
   `description` text DEFAULT NULL,
   `evaluation` text DEFAULT NULL,
-  `img` varchar(20) DEFAULT NULL
+  `img` varchar(20) DEFAULT NULL,
+  `prereq` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `courses`
 --
 
-INSERT INTO `courses` (`id`, `title`, `objectives`, `description`, `evaluation`, `img`) VALUES
-(1, 'Applied Quantitative Genetics and Its Implications on Plant Breeding', '<p>1) Know How to Apply the Principles of Quantitative Genetics to Sustainable Plant\r\nBreeding.</p>\r\n<p>2) Be Able to Manage Sustainable Breeding Programs Based on Quantitative Traits.</p>', 'The aim of this course is to understand sustainable plant breeding and to be able to manage sustainable breeding programs based on quantitative traits.\r\n\r\nThe course will help you to estimate the genetic variation in plant populations and how this information can be applied to maximize genetic improvement of germplasm and develop superior genotypes. I will share my 30-year experience increasing genetic diversity while integrating pre-breeding efforts in strategic environments with cultivar development in target environments to adapt plants to climate change and lower environmental footprint.', 'The students will be evaluated based on tests and problem set assignments.\r\nGrading - Exam content will be based on lectures and problems.', 'module.jpg'),
-(2, 'course #2', 'objectives #2', 'dex #2', 'ev #2', 'module.jpg'),
-(3, 'course #3', 'objectives #3', 'dex #3', 'ev #3', 'module.jpg'),
-(4, 'course #4', 'objectives #4', 'dex #4', 'ev #4', 'module.jpg');
+INSERT INTO `courses` (`id`, `title`, `objectives`, `description`, `evaluation`, `img`, `prereq`) VALUES
+(1, 'Applied Quantitative Genetics and Its Implications on Plant Breeding', '<p>1) Know How to Apply the Principles of Quantitative Genetics to Sustainable Plant\r\nBreeding.</p>\r\n<p>2) Be Able to Manage Sustainable Breeding Programs Based on Quantitative Traits.</p>', 'The aim of this course is to understand sustainable plant breeding and to be able to manage sustainable breeding programs based on quantitative traits.\r\n\r\nThe course will help you to estimate the genetic variation in plant populations and how this information can be applied to maximize genetic improvement of germplasm and develop superior genotypes. I will share my 30-year experience increasing genetic diversity while integrating pre-breeding efforts in strategic environments with cultivar development in target environments to adapt plants to climate change and lower environmental footprint.', 'The students will be evaluated based on tests and problem set assignments.\r\nGrading - Exam content will be based on lectures and problems.', 'module.jpg', 'Genetics and Plant Improvement,\r\nIntroduction to Plant Breeding,\r\nBiometrics and Experimental Designs,\r\nPopulation Genetics,\r\nCrop Breeding Techniques'),
+(2, 'Germplasm Choice and Adaptation', '1) Identify Cost-Effective Ways to Reduce Water and Nutrient Consumption on Farm.<br>\r\n2) Introduction to the Development of the Next Generation of Sustainable Cultivars.<br>\r\n3) Increase Sustainable Options to Farmers.', 'Introduction to Breeding Strategies to Climate Change Adaptation and Lower\r\nEnvironmental Footprint.', 'The students will be evaluated based on tests and problem set assignments.', 'module.jpg', 'Plant Breeding'),
+(3, 'Genetic Improvement', '1) Know How to Improve Genetically Broad-Based Populations. <br>\r\n2) Be Able to Identify the Best Breeding Techniques to Maximize Genetic Gain.', 'Breeding Techniques to Maximize Genetic Improvement.', 'The students will be evaluated based on tests and problem set assignments.', 'module.jpg', 'Genetics and Plant Improvement,\r\nIntroduction to Plant Breeding,\r\nBiometrics and Experimental Designs,\r\nPopulation Genetics'),
+(4, 'course #4', '1) Identify Desirable Germplasm to Increase Breeding Success. <br>\r\n2) Increase Genetic Diversity on Farm. <br>\r\n3) Utilize Breeding Techniques to Adapt Germplasm to Local Environments.', 'Management of Genetic Diversity within Species.', 'The students will be evaluated based on tests and problem set assignments.', 'module.jpg', 'Plant Breeding.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `enrollments`
+--
+
+CREATE TABLE `enrollments` (
+  `id` int(11) NOT NULL,
+  `course_id` int(11) NOT NULL,
+  `account_id` int(11) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `message`
+--
+
+CREATE TABLE `message` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `subject` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `message` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `message`
+--
+
+INSERT INTO `message` (`id`, `name`, `subject`, `email`, `message`) VALUES
+(1, 'die', 'New contact request submitted', 'Dienin606@gmail.com', 'weienfwniwiwndijwn'),
+(2, 'wnowd', 'New contact request submitted', 'dnudnu@gmail.com', 'weunrfnnjfnewniowenweni'),
+(3, 'dko', 'wefnjrw', 'dnudnu@gmail.com', 'ujneriernife');
 
 -- --------------------------------------------------------
 
@@ -151,6 +188,18 @@ ALTER TABLE `courses`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `enrollments`
+--
+ALTER TABLE `enrollments`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `message`
+--
+ALTER TABLE `message`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `pages`
 --
 ALTER TABLE `pages`
@@ -177,6 +226,18 @@ ALTER TABLE `conoptions`
 --
 ALTER TABLE `courses`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `enrollments`
+--
+ALTER TABLE `enrollments`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `message`
+--
+ALTER TABLE `message`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `pages`

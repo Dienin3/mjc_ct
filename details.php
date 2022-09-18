@@ -1,3 +1,9 @@
+<?php
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+
+?>
 <!DOCTYPE html>
 
 <?php 
@@ -23,8 +29,9 @@ if ($result->num_rows > 0) {
         $title = $row["title"];
         $objectives =$row["objectives"];
         $img = $row["img"];
-        $evaluation =$row["evaluation"];
-        $description =$row["description"];
+        $evaluation = $row["evaluation"];
+        $description = $row["description"];
+        $requisites = $row["prereq"];
       
   }
 } else {
@@ -53,6 +60,25 @@ $conn->close();
                     <h3>Evaluation:</h3>
                     <?php print $evaluation ?>
                 </div> 
+                <div class="col span_2_of_3">
+                    <h3>Pre-Requisites:</h3>
+                    <?php print $requisites ?>
+                </div>
+            <div class="col span_2_of_3">
+                <?php if (!isset($_SESSION['loggedin'])) {
+	print "login to enroll";
+} else {
+    $accountid = $_session['id'];
+     ?>
+    <form action="enroll.php" method="post">
+        <input type="hidden" name="courseid" value="$courseid">
+        <input type="hidden" name="accountid" value="$accountid">
+        <input type="submit" value="Enroll">
+    </form> 
+                <?php
+                    }
+                ?>
+            </div>
         </div>
 
           
