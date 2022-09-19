@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
   <div class="gallery">
     <a target="_blank" href="details.php?courseid=<?php print $courseid;?>">
             <div class="desc">
-        <h2><?php print $courseid ?>) <?php print $title;?></h2>
+        <h2><?php print $title;?></h2>
       </div>
       <img src="images/<?php print $img;?>" alt="<?php print $title;?>">
     </a>

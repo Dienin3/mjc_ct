@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 19, 2022 at 07:08 AM
+-- Generation Time: Sep 16, 2022 at 06:25 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -80,6 +80,7 @@ CREATE TABLE `courses` (
   `title` varchar(100) DEFAULT NULL,
   `objectives` text DEFAULT NULL,
   `description` text DEFAULT NULL,
+  `evaluation` text DEFAULT NULL,
   `img` varchar(20) DEFAULT NULL,
   `prereq` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -88,15 +89,11 @@ CREATE TABLE `courses` (
 -- Dumping data for table `courses`
 --
 
-INSERT INTO `courses` (`id`, `title`, `objectives`, `description`, `img`, `prereq`) VALUES
-(1, 'Applied Quantitative Genetics and Its Implications on Plant Breeding', '<p>1) Know How to Apply the Principles of Quantitative Genetics to Sustainable Plant\r\nBreeding.</p>\r\n<p>2) Be Able to Manage Sustainable Breeding Programs Based on Quantitative Traits.</p>', 'The aim of this course is to understand sustainable plant breeding and to be able to manage sustainable breeding programs based on quantitative traits.\r\n\r\nThe course will help you to estimate the genetic variation in plant populations and how this information can be applied to maximize genetic improvement of germplasm and develop superior genotypes. I will share my 30-year experience increasing genetic diversity while integrating pre-breeding efforts in strategic environments with cultivar development in target environments to adapt plants to climate change and lower environmental footprint.', 'module.jpg', 'Genetics and Plant Improvement,\r\nIntroduction to Plant Breeding,\r\nBiometrics and Experimental Designs,\r\nPopulation Genetics,\r\nCrop Breeding Techniques'),
-(2, 'Introduction to Sustainable Breeding<br><br>', '1) Identify Cost-Effective Ways to Reduce Water and Nutrient Consumption on Farm.<br>\r\n2) Introduction to the Development of the Next Generation of Sustainable Cultivars.<br>\r\n3) Increase Sustainable Options to Farmers.', 'Introduction to Breeding Strategies to Climate Change Adaptation and Lower\r\nEnvironmental Footprint.', 'module.jpg', 'Plant Breeding'),
-(3, 'Germplasm Choice and Adaptation<br><br>', '1) Know How to Identify Desirable Germplasm to Increase Breeding Success.<br>\r\n2) Create Ways to Increase Genetic Diversity on Farm.<br>\r\n3) Utilize Breeding Techniques to Adapt Germplasm to Local Environments.', 'Management of Genetic Diversity within Species.', 'module.jpg', 'Plant Breeding'),
-(4, 'Genetic Improvement<br><br><br>', '1) Know How to Improve Genetically Broad-Based Populations. <br>\r\n2) Be Able to Identify the Best Breeding Techniques to Maximize Genetic Gain.', 'Breeding Techniques to Maximize Genetic Improvement.', 'module.jpg', 'Genetics and Plant Improvement,\r\nIntroduction to Plant Breeding,\r\nBiometrics and Experimental Designs,\r\nPopulation Genetics'),
-(5, 'Cultivar Development<br><br>', '1) Know How to Identify Top Genotypes.<br>\r\n2) Be Able to Identify the Best Breeding Techniques to Develop cultivars.', 'Development of the Next Generation of Sustainable Cultivars.', 'module.jpg', 'Germplasm Choice and Adaptation, \r\nGenetic Improvement, \r\nIntroduction to Sustainable Plant Breeding, \r\nBiometrics and Experimental Designs, \r\nApplied Quantitative Genetics'),
-(6, 'Cultivar Releases<br><br>', '1) Know How to Protect and Manage Intellectual Property.<br>\r\n2) Be Able to Present New Products to the Public Sector and the Seed Industry.', 'Releasing of the Next Generation of Sustainable Cultivars.', 'module.jpg', 'Germplasm Choice and Adaptation, \r\nGenetic Improvement, \r\nCultivar Development'),
-(7, 'Teaching, Traits, and Breeding Techniques', '1) Identify Useful Technology According to Trait Genetic Complexity. <br>\r\n2) Know How to Identify Cost Effective Technology for Breeding Techniques.', 'Effect of Technology on Traits and Breeding Techniques.', 'module.jpg', 'Introduction to Sustainable Breeding'),
-(8, 'Management of Plant Breeding Programs', '1) Know How to Integrate all Aspects of a Breeding Program.<br>\r\n2) Maximize cost efficiency.', 'Management of Public and Private Plant Breeding Programs for Cultivar Development.', 'module.jpg', 'All courses.');
+INSERT INTO `courses` (`id`, `title`, `objectives`, `description`, `evaluation`, `img`, `prereq`) VALUES
+(1, 'Applied Quantitative Genetics and Its Implications on Plant Breeding', '<p>1) Know How to Apply the Principles of Quantitative Genetics to Sustainable Plant\r\nBreeding.</p>\r\n<p>2) Be Able to Manage Sustainable Breeding Programs Based on Quantitative Traits.</p>', 'The aim of this course is to understand sustainable plant breeding and to be able to manage sustainable breeding programs based on quantitative traits.\r\n\r\nThe course will help you to estimate the genetic variation in plant populations and how this information can be applied to maximize genetic improvement of germplasm and develop superior genotypes. I will share my 30-year experience increasing genetic diversity while integrating pre-breeding efforts in strategic environments with cultivar development in target environments to adapt plants to climate change and lower environmental footprint.', 'The students will be evaluated based on tests and problem set assignments.\r\nGrading - Exam content will be based on lectures and problems.', 'module.jpg', 'Genetics and Plant Improvement,\r\nIntroduction to Plant Breeding,\r\nBiometrics and Experimental Designs,\r\nPopulation Genetics,\r\nCrop Breeding Techniques'),
+(2, 'Germplasm Choice and Adaptation', '1) Identify Cost-Effective Ways to Reduce Water and Nutrient Consumption on Farm.<br>\r\n2) Introduction to the Development of the Next Generation of Sustainable Cultivars.<br>\r\n3) Increase Sustainable Options to Farmers.', 'Introduction to Breeding Strategies to Climate Change Adaptation and Lower\r\nEnvironmental Footprint.', 'The students will be evaluated based on tests and problem set assignments.', 'module.jpg', 'Plant Breeding'),
+(3, 'Genetic Improvement', '1) Know How to Improve Genetically Broad-Based Populations. <br>\r\n2) Be Able to Identify the Best Breeding Techniques to Maximize Genetic Gain.', 'Breeding Techniques to Maximize Genetic Improvement.', 'The students will be evaluated based on tests and problem set assignments.', 'module.jpg', 'Genetics and Plant Improvement,\r\nIntroduction to Plant Breeding,\r\nBiometrics and Experimental Designs,\r\nPopulation Genetics'),
+(4, 'course #4', '1) Identify Desirable Germplasm to Increase Breeding Success. <br>\r\n2) Increase Genetic Diversity on Farm. <br>\r\n3) Utilize Breeding Techniques to Adapt Germplasm to Local Environments.', 'Management of Genetic Diversity within Species.', 'The students will be evaluated based on tests and problem set assignments.', 'module.jpg', 'Plant Breeding.');
 
 -- --------------------------------------------------------
 
@@ -228,13 +225,13 @@ ALTER TABLE `conoptions`
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `enrollments`
 --
 ALTER TABLE `enrollments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2001;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `message`
