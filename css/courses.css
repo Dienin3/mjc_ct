@@ -21,7 +21,7 @@ div.desc:hover {
 }
 
 .responsive {
-    padding: 0 6px;
+    padding: 6 6 6 6;
     float: left;
     width: 24.99999%;
 }

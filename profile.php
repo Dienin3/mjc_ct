@@ -7,20 +7,21 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: login/login.php');
 	exit;
 }
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '';
-$DATABASE_NAME = 'ctg';
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-if (mysqli_connect_errno()) {
-	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
+include('setup.php');
 // We don't have the password or email info stored in sessions so instead we can get the results from the database.
-$stmt = $con->prepare('SELECT password, email FROM accounts WHERE id = ?');
+$stmt = $conn->prepare('SELECT id, username, email FROM accounts WHERE id = ?');
 // In this case we can use the account ID to get the account info.
 $stmt->bind_param('i', $_SESSION['id']);
 $stmt->execute();
-$stmt->bind_result($password, $email);
+$stmt->bind_result($id, $username, $email);
+$stmt->fetch();
+$stmt->close();
+
+$stmt = $conn->prepare('SELECT courseid FROM enrollments WHERE id = ?');
+// In this case we can use the account ID to get the account info.
+$stmt->bind_param('i', $id);
+$stmt->execute();
+$stmt->bind_result($courseid);
 $stmt->fetch();
 $stmt->close();
 ?>
@@ -41,16 +42,17 @@ $stmt->close();
 				<table>
 					<tr>
 						<td class="col span_1_of_3">Username:</td>
-						<td class="col span_2_of_3_v2"><?=$_SESSION['name']?></td>
-					</tr>
-					<tr>
-						<td class="col span_1_of_3">Password:</td>
-						<td class="col span_2_of_3_v2"><?=$password?></td>
+						<td class="col span_2_of_3_v2"><?=$username?></td>
 					</tr>
 					<tr>
 						<td class="col span_1_of_3">Email:</td>
 						<td class="col span_2_of_3_v2"><?=$email?></td>
 					</tr>
+                    <tr>
+						<td class="col span_1_of_3">Course:</td>
+						<td class="col span_2_of_3_v2"><?=$courseid?></td>
+					</tr>
+                    
 				</table>
 			</div>
 		</div>
