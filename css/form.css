@@ -1,0 +1,35 @@
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--dl-color-green);
+    border-radius: 4px;
+    resize: vertical;
+}
+label {
+    padding: 2% 2% 2% 0;
+    display: inline-block;
+    color: var(--dl-color-white);
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit] {
+    background-color: var(--dl-color-red);
+    color: var(--dl-color-white);
+    padding: 12px 20px 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #871b17;
+}
+
+    /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
