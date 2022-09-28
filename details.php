@@ -48,7 +48,11 @@ $conn->close();
                     <h3>Description:</h3>
                         <?php print $description ?>
                 </div>
+<<<<<<< Updated upstream
                 <div class="col span_1_of_3"> 
+=======
+                <div class="col span_1_of_4"> 
+>>>>>>> Stashed changes
                     <img class="home-img" src="images/<?php print $img ?>">
                 </div>
                 <div class="col span_2_of_3">
@@ -60,9 +64,15 @@ $conn->close();
                     <?php print $requisites ?>
                 </div>
             <div class="col span_2_of_3">
+<<<<<<< Updated upstream
                 <?php if (!isset($_SESSION['loggedin'])) {
 	print "login to enroll";
 } else {
+=======
+                <?php if (!isset($_SESSION['loggedin'])) { ?>
+	<a href="login/login.php"><button class="enrollButtons" >Login to enroll</button></a>
+<?php } else {
+>>>>>>> Stashed changes
     if (isset($_SESSION)) {
         // print_r($_SESSION);
         $accountid = $_SESSION['id'];
@@ -71,7 +81,11 @@ $conn->close();
     <form action="enroll.php" method="post">
         <input type="hidden" name="courseid" value="<?php print $courseid;?>">
         <input type="hidden" name="accountid" value="<?php print $accountid;?>">
+<<<<<<< Updated upstream
         <input type="submit" value="Enroll">
+=======
+        <input type="submit" class="enrollButtons" value="Enroll">
+>>>>>>> Stashed changes
     </form> 
                 <?php
                     }

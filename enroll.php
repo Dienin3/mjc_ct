@@ -11,7 +11,12 @@ $sql = "INSERT INTO `enrollments` (`course_id`, `account_id`, `date`) VALUES ('$
 print $sql;
 
 if ($conn->query($sql) === TRUE) {
+<<<<<<< Updated upstream
   echo "New record created successfully";
+=======
+    echo "New record created successfully";
+    header('Location: courses.php');
+>>>>>>> Stashed changes
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

@@ -1,5 +1,9 @@
 div.gallery {
     border: 3px solid #ccc;
+<<<<<<< Updated upstream
+=======
+    padding: 6 6 6 6;
+>>>>>>> Stashed changes
 }
 
 div.gallery:hover {

@@ -17,6 +17,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+<<<<<<< Updated upstream
+=======
+.home-img {
+    width: 100%;
+}
+>>>>>>> Stashed changes
 /* honeypot */
 .user-cannot-see {
     display:none
@@ -56,7 +62,10 @@
         width: 100%; 
         font-size: 1.8rem;
         font-family: 'Roboto', sans-serif;
+<<<<<<< Updated upstream
         text-align: center;
+=======
+>>>>>>> Stashed changes
         color: var(--dl-color-white);
         padding: 1rem;
     }
@@ -78,7 +87,17 @@
     .span_1_of_4 {
         width: 24.1%
     }
+<<<<<<< Updated upstream
 
+=======
+    .span_2_of_4 {
+        width: 49%;
+    }
+.span-text {
+    color: var(--dl-color-white);
+    font-size: 2.1rem;
+}
+>>>>>>> Stashed changes
 body {
     width: 100%;
     height: 100%;
@@ -102,7 +121,11 @@ a {
     font-size: 4rem;
     padding: 1% 1% 0 1%;
     color: var(--dl-color-white);
+<<<<<<< Updated upstream
     font-family: 'Lato', sans-serif;
+=======
+    font-family: 'Roboto', sans-serif;
+>>>>>>> Stashed changes
 }
 .wrapper {
     width: 90%;
@@ -169,6 +192,26 @@ a {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+<<<<<<< Updated upstream
+=======
+.heroImage3 {
+     /* Image of Corn */
+	background-image: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/T-1.jpg");
+	height: 40rem;
+	background-position: center;
+	background-repeat: no-repeat;
+    line-height: 5rem;
+}
+.paraAlign {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.para {
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+}
+>>>>>>> Stashed changes
 .heroContents {
 	padding-top: 20rem;
     font-size: 3rem;
@@ -179,7 +222,10 @@ a {
 }
 .contactHero {
     background-image:  linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/Ct-1.jpg");
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
 }
 .home-impact-section {
 	clear: both;
@@ -225,6 +271,17 @@ a {
   font-size: 2rem;
   border-radius: 1rem;
 }
+<<<<<<< Updated upstream
+=======
+.enrollButtons {
+    background-color: var(--dl-color-green);
+    border: none;
+    color: var(--dl-color-white);
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+}
+>>>>>>> Stashed changes
 footer {
     font-family: 'Lato', sans-serif;
     width: 100%;
@@ -277,13 +334,23 @@ footer {
     .span_2_of_3 {
         width: 100%;
     }
+<<<<<<< Updated upstream
+=======
+    .home-img {
+        width: 100%;   
+    }
+>>>>>>> Stashed changes
 }
 /* go full width below 600px */
 @media only screen and (max-width: 600px) {
     .col {  
         margin: 1% 0 1% 0%; 
     }
+<<<<<<< Updated upstream
 	.span_3_of_3, .span_2_of_3, .span_2_of_3_v2, .span_1_of_3, { 
+=======
+	.span_3_of_3, .span_2_of_3, .span_2_of_3_v2, .span_1_of_3, .span_2_of_4 { 
+>>>>>>> Stashed changes
         width: 100%; 
     }
 }
