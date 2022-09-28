@@ -8,27 +8,8 @@ if (!isset($_SESSION['loggedin'])) {
 	exit;
 }
 include('setup.php');
-<<<<<<< Updated upstream
-// We don't have the password or email info stored in sessions so instead we can get the results from the database.
-$stmt = $conn->prepare('SELECT id, username, email FROM accounts WHERE id = ?');
-// In this case we can use the account ID to get the account info.
-$stmt->bind_param('i', $_SESSION['id']);
-$stmt->execute();
-$stmt->bind_result($id, $username, $email);
-$stmt->fetch();
-$stmt->close();
-
-$stmt = $conn->prepare('SELECT courseid FROM enrollments WHERE id = ?');
-// In this case we can use the account ID to get the account info.
-$stmt->bind_param('i', $id);
-$stmt->execute();
-$stmt->bind_result($courseid);
-$stmt->fetch();
-$stmt->close();
-=======
     //print_r ($_SESSION);
     $name = $_SESSION['name'];
->>>>>>> Stashed changes
 ?>
     <head>
         <meta charset="UTF-8">
@@ -47,18 +28,6 @@ $stmt->close();
 				<table>
 					<tr>
 						<td class="col span_1_of_3">Username:</td>
-<<<<<<< Updated upstream
-						<td class="col span_2_of_3_v2"><?=$username?></td>
-					</tr>
-					<tr>
-						<td class="col span_1_of_3">Email:</td>
-						<td class="col span_2_of_3_v2"><?=$email?></td>
-					</tr>
-                    <tr>
-						<td class="col span_1_of_3">Course:</td>
-						<td class="col span_2_of_3_v2"><?=$courseid?></td>
-					</tr>
-=======
 						<td><?php print $name?></td>
 					</tr>
     <?php     
@@ -102,7 +71,6 @@ if ($result->num_rows >= 0) {
 }
     ?>    
                     
->>>>>>> Stashed changes
                     
 				</table>
 			</div>

@@ -17,19 +17,11 @@ session_start();
       <?php include('components/header.php');?> 
         <div class="section">
         <div class="wrapper">
-<<<<<<< Updated upstream
-            <div class="span_3_of_3">
-                <h2>Responsive Image Gallery</h2>
-                <h4>Resize the browser window to see the effect.</h4>
-            </div>
-<?php
-=======
             <div class="span_3_of_3 para">
                 <h2>Courses I Offer</h2>
             </div>
 <?php
 //This uses media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).
->>>>>>> Stashed changes
     include('setup.php');
     $sql = "Select * from courses";
     $result = $conn->query($sql);
@@ -64,13 +56,6 @@ $conn->close();
 
 <div class="clearfix"></div>
 
-<<<<<<< Updated upstream
-<div style="padding:6px;">
-  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-</div>
-=======
->>>>>>> Stashed changes
         </div>
         </div>
         <footer>

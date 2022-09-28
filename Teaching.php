@@ -6,23 +6,14 @@ session_start();
 ?>
 <html lang="en">
     <head>
-<<<<<<< Updated upstream
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/courses.css" />        
-=======
         <meta charset="UTF-8">       
->>>>>>> Stashed changes
         <link rel="stylesheet" href="css/style.css" />
 
         <script type="text/javascript" src="/js/javascript.js"></script>
     </head>
 <?php
     include('setup.php');
-<<<<<<< Updated upstream
-    $sql = "Select  from pages where pagenum=1";
-=======
     $sql = "Select title1, para1, img1, para2, img2, para3, para4, para5, para6 from pages where pagenum=4";
->>>>>>> Stashed changes
     $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -30,8 +21,6 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     
         $title1 = $row["title1"];
-<<<<<<< Updated upstream
-=======
         $img1 = $row["img1"];
         $img2 = $row["img2"];
         $para1 = $row["para1"];
@@ -40,7 +29,6 @@ if ($result->num_rows > 0) {
         $para4 = $row["para4"];
         $para5 = $row["para5"];
         $para6 = $row["para6"];
->>>>>>> Stashed changes
       
   }
 } else {
@@ -49,10 +37,6 @@ if ($result->num_rows > 0) {
 $conn->close();
     ?>
     <body>
-<<<<<<< Updated upstream
-      <?php include('components/header.php');?> 
-        
-=======
       <?php include('components/header.php');?>    
             <div class="heroImage3">
 	           <div class="heroContents">
@@ -97,7 +81,6 @@ $conn->close();
                     <?php print $para6; ?>
                 </div>
             </div>
->>>>>>> Stashed changes
         <footer>
             <?php include('components/footer.php');?>
         </footer>
