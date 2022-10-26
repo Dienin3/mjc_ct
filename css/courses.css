@@ -16,6 +16,7 @@ div.desc {
     padding: 15px;
     text-align: center;
     color: #ccc;
+    font-size: 0.8rem;
 }
 div.desc:hover {
     color: #777;
@@ -28,16 +29,16 @@ div.desc:hover {
 }
 
 @media only screen and (max-width: 700px) {
-  .responsive {
+    .responsive {
         width: 49.99999%;
-      margin: 6px 0;
-  }
+        margin: 6px 0;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-  .responsive {
+    .responsive {
         width: 100%;
-  }
+    }
 }
 
 .clearfix:after {

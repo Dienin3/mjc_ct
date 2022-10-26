@@ -1,4 +1,6 @@
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid var(--dl-color-green);
@@ -10,10 +12,10 @@ label {
     display: inline-block;
     color: var(--dl-color-white);
     font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
-input[type=submit] {
+input[type="submit"] {
     background-color: var(--dl-color-red);
     color: var(--dl-color-white);
     padding: 12px 20px 12px 20px;
@@ -23,13 +25,20 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
     background-color: #871b17;
 }
 
-    /* Clear floats after the columns */
+/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+.status-msg {
+    padding: 1% 1% 0 0;
+    display: inline-block;
+    color: var(--dl-color-white);
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
 }

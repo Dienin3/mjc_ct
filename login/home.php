@@ -3,8 +3,8 @@
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: profile.php');
-	exit;
+    header('Location: profile.php');
+    exit();
 }
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ if (!isset($_SESSION['loggedin'])) {
 		</nav>
 		<div class="content">
 			<h2>Home Page</h2>
-			<p>Welcome back, <?=$_SESSION['name']?>!</p>
+			<p>Welcome back, <?= $_SESSION['name'] ?>!</p>
 		</div>
 	</body>
 </html>

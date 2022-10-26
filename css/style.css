@@ -1,16 +1,16 @@
 :root {
     /* Variables for colors */
-  --dl-color-paleyellow: #fffef3ff;
-  --dl-color-red: #961f1aff;
-  --dl-color-grey: #cbcbcbff;
-  --dl-color-black: #1a1a1aff;
-  --dl-color-green: #7c7d5bff;
-  --dl-color-white: #eaeaeaff;
+    --dl-color-paleyellow: #fffef3ff;
+    --dl-color-red: #961f1aff;
+    --dl-color-grey: #cbcbcbff;
+    --dl-color-black: #1a1a1aff;
+    --dl-color-green: #7c7d5bff;
+    --dl-color-white: #eaeaeaff;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,500;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,500;1,400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
 
 * {
     margin: 0;
@@ -22,14 +22,14 @@
 }
 /* honeypot */
 .user-cannot-see {
-    display:none
+    display: none;
 }
 
 /*  SECTIONS  */
 .section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
     width: 100%;
     height: auto;
     background-color: var(--dl-color-black);
@@ -42,47 +42,56 @@
 
 /*  COLUMN SETUP  */
 .col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.2%;
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.2%;
 }
-.col:first-child { margin-left: 0; }
+.col:first-child {
+    margin-left: 0;
+}
 
 /*  GROUPING  */
 .group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 */
+}
 
 /*  GRID OF THREE  */
-    .span_3_of_3 { 
-        width: 100%; 
-        font-size: 1.8rem;
-        font-family: 'Roboto', sans-serif;
-        color: var(--dl-color-white);
-        padding: 1rem;
-    }
-    .span_2_of_3 { 
-        width: 66.26%;
-        font-size: 1.8rem;
-        font-family: 'Roboto', sans-serif;
-        text-align: left;
-        color: var(--dl-color-white);
-    }
-    .span_2_of_3_v2 { 
-        width: 66.26%;
-        font-size: 1.8rem;
-        font-family: 'Roboto', sans-serif;
-    }
-    .span_1_of_3 { 
-        width: 32.53%; 
-    }
-    .span_1_of_4 {
-        width: 24.1%
-    }
-    .span_2_of_4 {
-        width: 49%;
-    }
+.span_3_of_3 {
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--dl-color-white);
+    padding: 1rem;
+}
+.span_2_of_3 {
+    width: 66.26%;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    color: var(--dl-color-white);
+}
+.span_2_of_3_v2 {
+    width: 66.26%;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+}
+.span_1_of_3 {
+    width: 32.53%;
+}
+.span_1_of_4 {
+    width: 24.1%;
+}
+.span_2_of_4 {
+    width: 49%;
+}
 .span-text {
     color: var(--dl-color-white);
     font-size: 2.1rem;
@@ -104,15 +113,22 @@ a {
 .header {
     background-color: var(--dl-color-red);
     border-bottom: 1px solid var(--dl-color-white);
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
 .heading {
     font-size: 4rem;
     padding: 1% 1% 0 1%;
     color: var(--dl-color-white);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 .wrapper {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    clear: both;
+    overflow: auto;
+}
+.nav-wrapper {
     width: 90%;
     height: auto;
     margin: auto;
@@ -145,12 +161,12 @@ a {
 .nav-item {
     margin-left: 5rem;
 }
-.nav-link{
+.nav-link {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--dl-color-white);
 }
-.nav-link:hover{
+.nav-link:hover {
     color: var(--dl-color-grey);
 }
 .logo {
@@ -163,26 +179,26 @@ a {
 .logo-image {
     width: 4rem;
 }
- .heroImage {
-     /* Image of Corn */
-	background-image: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/Hp-1.jpg");
-	height: 80rem;
-	background-position: center;
-	background-repeat: no-repeat;
+.heroImage {
+    /* Image of Corn */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../images/Hp-1.jpg");
+    height: 80rem;
+    background-position: center;
+    background-repeat: no-repeat;
 }
- .heroImage2 {
-     /* Image of Corn */
-	background-image: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/C-1.jpg");
-	height: auto;
-	background-position: center;
-	background-repeat: no-repeat;
+.heroImage2 {
+    /* Image of Corn */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../images/C-1.jpg");
+    height: auto;
+    background-position: center;
+    background-repeat: repeat-y;
 }
 .heroImage3 {
-     /* Image of Corn */
-	background-image: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/T-1.jpg");
-	height: 40rem;
-	background-position: center;
-	background-repeat: no-repeat;
+    /* Image of Corn */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../images/T-1.jpg");
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
     line-height: 5rem;
 }
 .paraAlign {
@@ -195,20 +211,20 @@ a {
     text-align: center;
 }
 .heroContents {
-	padding-top: 20rem;
+    padding-top: 20rem;
     font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
-	text-align: center;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
     line-height: 4.8rem;
-	color: var(--dl-color-white);
+    color: var(--dl-color-white);
 }
 .contactHero {
-    background-image:  linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.8)), url("../images/Ct-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../images/Ct-1.jpg");
 }
 .home-impact-section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;    
+    clear: both;
+    padding: 0px;
+    margin: 0px;
     background-color: var(--dl-color-green);
     width: 100%;
     color: var(--dl-color-white);
@@ -216,13 +232,13 @@ a {
     padding-top: 2%;
     padding-bottom: 2%;
     font-size: 2.4rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: italic;
 }
 .home-review-title {
     padding-top: 2rem;
     font-size: 1.8rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
     color: var(--dl-color-white);
 }
@@ -237,17 +253,21 @@ a {
 .about-me-section-text {
     padding-top: 4rem;
     font-size: 1.8rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: left;
     color: var(--dl-color-white);
 }
 .learnMoreButton {
-  background-color: var(--dl-color-green);
-  border: none;
-  color: var(--dl-color-white);
-  padding: 10px;
-  font-size: 2rem;
-  border-radius: 1rem;
+    background-color: var(--dl-color-green);
+    border: none;
+    color: var(--dl-color-white);
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+.learnMoreButton:hover {
+    background-color: #727353;
+    transition: background-color 0.2s;
 }
 .enrollButtons {
     background-color: var(--dl-color-green);
@@ -257,14 +277,19 @@ a {
     font-size: 1.6rem;
     border-radius: 1rem;
 }
+.enrollButtons:hover {
+    background-color: #727353;
+    transition: background-color 0.2s;
+}
 footer {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     width: 100%;
     justify-content: space-between;
     background-color: var(--dl-color-red);
-    padding-top: .5%;
-    padding-bottom: .5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
     clear: both;
+    bottom: 0;
 }
 .container {
     display: flex;
@@ -298,8 +323,8 @@ footer {
     margin: 2% 6% 2% 6%;
     padding: 2% 5% 2% 3%;
     font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
-    line-height: 2.2rem; 
+    font-family: "Roboto", sans-serif;
+    line-height: 2.2rem;
 }
 /* go full width below 1200px */
 @media only screen and (max-width: 1200px) {
@@ -310,20 +335,26 @@ footer {
         width: 100%;
     }
     .home-img {
-        width: 100%;   
+        width: 100%;
     }
 }
 /* go full width below 600px */
 @media only screen and (max-width: 600px) {
-    .col {  
-        margin: 1% 0 1% 0%; 
+    .col {
+        margin: 1% 0 1% 0%;
     }
-	.span_3_of_3, .span_2_of_3, .span_2_of_3_v2, .span_1_of_3, .span_2_of_4 { 
-        width: 100%; 
+    .span_3_of_3,
+    .span_2_of_3,
+    .span_2_of_3_v2,
+    .span_1_of_3,
+    .span_2_of_4 {
+        width: 100%;
+    }
+    .about-me-img {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 1000px) {
-    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -334,8 +365,7 @@ footer {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-
-}
+    }
     .nav-menu.active {
         left: 0;
     }
@@ -358,4 +388,3 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-

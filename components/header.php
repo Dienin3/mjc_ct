@@ -1,6 +1,6 @@
 
 <header class="header">
-    <div class="wrapper">
+    <div class="nav-wrapper">
         <nav class="navbar">
                 <a href="/mjc_ct/index.php" class="logo"><img class="logo-image" src="images/Logo.png">MJC: Teaching & Consulting</a>
             <ul class="nav-menu">
@@ -23,14 +23,14 @@
                  <li class="nav-item">
 				    <a href="/mjc_ct/login/login.php" class="nav-link">Login</a>
                 </li>
-   <?php     } else { ?>
+   <?php } else { ?>
                 <li class="nav-item">
                     <a href="/mjc_ct/profile.php" class="nav-link">Profile</a>
                 </li>
                 <li class="nav-item fa-sign-out-alt">
 				    <a href="/mjc_ct/login/logout.php" class="nav-link">logout</a>
                 </li>
-       <?php  } ?>
+       <?php } ?>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -42,4 +42,3 @@
 </header>
 
 <script type="text/javascript" src="js/javascript.js"></script>
-

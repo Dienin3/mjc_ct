@@ -5,10 +5,10 @@
 		<title>Register</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
          <link href="../css/style.css" rel="stylesheet" type="text/css">
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="../css/formstyle.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-        <?php include('../components/header.php');?>
+        <?php include '../components/header.php'; ?>
 		<div class="register">
 			<h1>Register</h1>
 			<form action="register.php" method="post" autocomplete="off">
@@ -30,7 +30,7 @@
 			</form>
 		</div>
         <footer>
-        <?php include('../components/footer.php');?>    
+        <?php include '../components/footer.php'; ?>    
         </footer>    
 	</body>
 </html>

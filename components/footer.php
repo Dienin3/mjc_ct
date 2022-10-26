@@ -1,12 +1,12 @@
 <link href="css/style.css" rel="stylesheet" />
 
     <footer>
-        <div class="wrapper">
+        <div class="nav-wrapper">
             <div class="container">
                 <div class="footer-container">
                     <div class="footer-logo">
                         <img
-                             alt="image"
+                             alt="logo design of red corn"
                              src="./images/Logo.png"
                              class="logo-image"
                        />
